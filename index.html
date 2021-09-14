@@ -5,11 +5,13 @@
     <style>
       body {
         font-family: Tahoma;
-        margin: 0px 300px;
+        margin: 0px;
+        padding: 0;
+        box-sizing: border-box;
         background-color: #e4d9bd;
       }
       p {
-        text-align: left;
+        /*text-align: left;*/
         color: black;
 
       }
@@ -72,8 +74,14 @@
         width: 250px;
         margin-bottom: 20px;
       }
-      .menu {
+      .menu-container {
+        display: flex;
+        justify-content: center;
 
+      }
+      .menu {
+        display: flex;
+        width: 1000px;
       }
       .menu ul {
         list-style-type: none;
@@ -96,39 +104,113 @@
         background-color: #6e7393;
         border-radius: 3px;
       }
+
+      .aboutme-container {
+        display: flex;
+        justify-content: center;
+      }
+      .aboutme {
+        width: 1000px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /*border: 2px solid black;*/
+      }
+      .contact-container {
+        display: flex;
+        justify-content: center;
+      }
+      .contact {
+        width: 1000px;
+        display: flex;
+        flex-direction: column;
+      }
+
+          /* Desktop Styles */
+    @media only screen and (min-width: 501px) {
+      .info-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+      .projects-container {
+        width: 500px;
+      }
+
+      .workexperience-container {
+        width: 500px;
+      }
+
+    }
+        /* Mobile Styles */
+    @media only screen and (max-width: 500px) {
+      .info-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .projects-container {
+        width: 500px;
+      }
+
+      .workexperience-container {
+        width: 500px;
+      }
+    }
+    hr {
+      width: 1000px;
+    }
     </style>
+    <meta name='viewport'
+      content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
   </head>
   <body>
-    <div class="menu">
-    <ul>
-      <li><a href="default.asp">Home</a></li>
-      <li><a href="news.asp">Labs</a></li>
-      <li><a href="contact.asp">Contact</a></li>
-      <li><a href="http://nathanielhanson.com/">Portfolio</a></li>
-    </ul>
-  </div>
-    <h1>About Me</h1>
-    <p>My name is Nate Hanson. I am a sports junky with a love for computer
-      science. It is not a common combination but its the best combination.</p>
-    <h2>Projects</h2>
-    <p>Three example projects that I have been a part of:</p>
-    <ul>
-      <li>Created a sql database and a server for a family map application. I also created an application to access that server.</li>
-      <li>Contributed to the web application and website of a startup company in Orem, Utah </li>
-      <li>Coded a spelling corrector program in Java </li>
-    </ul>
-    <h2>My Work Experience</h2>
-    <p>I have had three primary employments in the past 6 years</p>
-    <ul>
-      <li>Data analyst intern and project manager for ReactionData inc.. </li>
-      <li>It assistant for American Leadership Academy. </li>
-      <li>Owner and head of finance for Handleton Lawn Care.</li>
-    </ul>
+    <div class='menu-container'>
+      <div class="menu">
+        <ul>
+          <li><a href="default.asp">Home</a></li>
+          <li><a href="news.asp">Labs</a></li>
+          <li><a href="contact.asp">Contact</a></li>
+          <li><a href="http://nathanielhanson.com/">Portfolio</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='aboutme-container'>
+      <div class='aboutme'>
+        <h1>About Me</h1>
+        <p>My name is Nate Hanson. I am a sports junky with a love for computer
+          science. It is not a common combination but it is the best combination.</p>
+      </div>
+    </div>
     <hr>
-    <h1>Contact me</h1>
-
-    <div class="button1"><a href= "https://www.linkedin.com/in/nate-hanson-288993207/">Linkedin</a></div>
-    <div class="button2"><a href= "https://github.com/hansonnate">GitHub</a></div>
-
+    <div class='info-container'>
+      <div class='projects-container'>
+        <h2>Project Experience</h2>
+        <p>Three example projects that I have been a part of:</p>
+        <ul>
+          <li>Created a sql database and a server for a family map application. I also created an application to access that server.</li>
+          <li>Contributed to the web application and website of a startup company in Orem, Utah </li>
+          <li>Coded a spelling corrector program in Java </li>
+        </ul>
+      </div>
+      <div class='workexperience-container'>
+        <h2>My Work Experience</h2>
+        <p>I have had three primary employments in the past 6 years:</p>
+        <ul>
+          <li>Data analyst intern and project manager for ReactionData inc.. </li>
+          <li>It assistant for American Leadership Academy. </li>
+          <li>Owner and head of finance for Handleton Lawn Care.</li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <div class='contact-container'>
+      <div class='contact'>
+        <h1>Contact me</h1>
+        <div class="button1"><a href= "https://www.linkedin.com/in/nate-hanson-288993207/">Linkedin</a></div>
+        <div class="button2"><a href= "https://github.com/hansonnate">GitHub</a></div>
+      </div>
+    </div>
   </body>
 </html>
