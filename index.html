@@ -10,7 +10,6 @@
       }
       p {
         text-align: left;
-        padding-right: 550px;
         color: black;
 
       }
@@ -40,7 +39,7 @@
       }
       ul {
         color: black;
-        display: inline-block;
+
       }
       a {
         text-decoration: none;
@@ -48,7 +47,7 @@
       }
       a:hover {
         cursor: pointer;
-        color: black;
+        color: #6e7393;
         transition: .5s;
       }
       .button1 {
@@ -60,7 +59,7 @@
         border: 2px solid #5D6063;
         border-radius: 5px;
         width: 250px;
-        float: right;
+        margin-bottom: 20px;
       }
       .button2 {
         text-align: Center;
@@ -71,14 +70,43 @@
         border: 2px solid #5D6063;
         border-radius: 5px;
         width: 250px;
+        margin-bottom: 20px;
       }
-      .contactme {
-        width: 800px;
-        margin: 0px 190px;
+      .menu {
+
+      }
+      .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #e4d9bd;
+      }
+      .menu li {
+        float: left;
+      }
+      .menu li a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      .menu li a:hover {
+        background-color: #6e7393;
+        border-radius: 3px;
       }
     </style>
   </head>
   <body>
+    <div class="menu">
+    <ul>
+      <li><a href="default.asp">Home</a></li>
+      <li><a href="news.asp">Labs</a></li>
+      <li><a href="contact.asp">Contact</a></li>
+      <li><a href="http://nathanielhanson.com/">Portfolio</a></li>
+    </ul>
+  </div>
     <h1>About Me</h1>
     <p>My name is Nate Hanson. I am a sports junky with a love for computer
       science. It is not a common combination but its the best combination.</p>
@@ -98,9 +126,9 @@
     </ul>
     <hr>
     <h1>Contact me</h1>
-    <div class="contactme">
+
     <div class="button1"><a href= "https://www.linkedin.com/in/nate-hanson-288993207/">Linkedin</a></div>
     <div class="button2"><a href= "https://github.com/hansonnate">GitHub</a></div>
-  </div>
+
   </body>
 </html>
